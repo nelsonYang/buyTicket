@@ -1,0 +1,58 @@
+package com.nelson.buyticket.json;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
+/**
+ *
+ * @author Administrator
+ */
+public class JsonParser {
+
+    public static Map<String, String> parseJson(String path,String arrayName) {
+        Map<String,String> headerMap = new HashMap<String,String>(2,1);
+        InputStream is = null;
+        try {
+            is = JsonParser.class.getResourceAsStream(path);
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+            String line;
+            StringBuilder jsonBuilder = new StringBuilder(100);
+            while ((line = br.readLine()) != null) {
+                jsonBuilder.append(line.trim());
+            }
+            String jsonStr = jsonBuilder.toString();
+            System.out.println("json=" + jsonStr);
+            JSONObject jb = JSONObject.fromObject(jsonStr);
+            //取查询参数params,是个json数组
+            JSONArray jsons = jb.getJSONArray(arrayName);
+            int jsonLength = jsons.size();
+            //对json数组进行循环
+           headerMap = new HashMap<String,String>(jsonLength,1);
+            JSONObject tempJson;
+            for (int i = 0; i < jsonLength; i++) {
+               tempJson  = JSONObject.fromObject(jsons.get(i));
+                headerMap.put(tempJson.getString("name"), tempJson.getString("value"));
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(JsonParser.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            if (is != null) {
+                try {
+                    is.close();
+                } catch (IOException ex) {
+                    Logger.getLogger(JsonParser.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+        return headerMap;
+    }
+
+}

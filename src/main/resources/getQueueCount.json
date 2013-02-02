@@ -1,0 +1,36 @@
+{
+    "header": [
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Accept-Charset",
+        "value": "GBK,utf-8;q=0.7,*;q=0.3"
+      },
+      {
+        "name": "Host",
+        "value": "dynamic.12306.cn"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/x-www-form-urlencoded"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*"
+      },
+      {
+        "name": "Referer",
+        "value": "https://dynamic.12306.cn/otsweb/order/confirmPassengerAction.do?method=init"
+      }
+    ]
+}

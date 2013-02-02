@@ -1,0 +1,94 @@
+{
+    "params": [
+    {
+        "name": "leftTicketStr",
+        "value": "800795041170099500708007953000"
+    },
+   
+    {
+        "name": "checkbox0",
+        "value": "0"
+    },
+    {
+        "name": "orderRequest.train_date",
+        "value": "2013-02-01"
+    },
+    {
+        "name": "orderRequest.train_no",
+        "value": "65000D701204"
+    },
+    {
+        "name": "orderRequest.station_train_code",
+        "value": "D7012"
+    },
+    {
+        "name": "orderRequest.from_station_telecode",
+        "value": "SZQ"
+    },
+    {
+        "name": "orderRequest.to_station_telecode",
+        "value": "GGQ"
+    },
+    {
+        "name": "orderRequest.seat_type_code",
+        "value": ""
+    },
+    {
+        "name": "orderRequest.ticket_type_order_num",
+        "value": ""
+    },
+    {
+        "name": "orderRequest.bed_level_order_num",
+        "value": "000000000000000000000000000000"
+    },
+    {
+        "name": "orderRequest.start_time",
+        "value": "06:20"
+    },
+    {
+        "name": "orderRequest.end_time",
+        "value": "07:39"
+    },
+    {
+        "name": "orderRequest.cancel_flag",
+        "value": "1"
+    },
+    {
+        "name": "orderRequest.id_mode",
+        "value": "Y"
+    },
+    {
+        "name": "passenger_1_seat",
+        "value": "7"
+    },
+    {
+        "name": "passenger_1_ticket",
+        "value": "1"
+    },
+    {
+        "name": "passenger_1_cardtype",
+        "value": "B"
+    },
+    {
+        "name": "passenger_1_cardno",
+        "value": "654321"
+    },
+    {
+        "name": "passenger_1_mobileno",
+        "value": "13728656169"
+    },
+    {
+        "name": "checkbox9",
+        "value": "Y"
+    },
+    {
+        "name": "orderRequest.reserve_flag",
+        "value": "A"
+    },
+    {
+        "name": "tFlag",
+        "value": "dc"
+    }
+    ]  
+   
+}

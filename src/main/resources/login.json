@@ -1,0 +1,33 @@
+{
+    "header":[
+
+    {
+        "name": "Origin",
+        "value": "https://dynamic.12306.cn"
+    },
+    {
+        "name": "Accept-Charset",
+        "value": "GBK,utf-8;q=0.7,*;q=0.3"
+    },
+    {
+        "name": "Host",
+        "value": "dynamic.12306.cn"
+    },
+    {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17"
+    },
+    {
+        "name": "Content-Type",
+        "value": "application/x-www-form-urlencoded"
+    },
+    {
+        "name": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    },
+    {
+        "name": "Referer",
+        "value": "https://dynamic.12306.cn/otsweb/loginAction.do?method=init"
+    }
+    ]
+}
