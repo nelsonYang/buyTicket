@@ -1,0 +1,178 @@
+{
+  "startedDateTime": "2013-02-03T05:44:04.974Z",
+  "time": 128,
+  "request": {
+    "method": "GET",
+    "url": "https://dynamic.12306.cn/otsweb/order/confirmPassengerAction.do?method=getQueueCount&train_date=2013-02-08&train_no=6i00000G7200&station=G72&seat=M&from=IOQ&to=BXP&ticket=O093650001M1479500039292350001",
+    "httpVersion": "HTTP/1.1",
+    "headers": [
+      {
+        "name": "Cookie",
+        "value": "JSESSIONID=1C1215C6E7D116282CBFC25CE50325B4; BIGipServerotsweb=2379481354.62495.0000"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip,deflate,sdch"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.8"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Accept-Charset",
+        "value": "GBK,utf-8;q=0.7,*;q=0.3"
+      },
+      {
+        "name": "Host",
+        "value": "dynamic.12306.cn"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/x-www-form-urlencoded"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*"
+      },
+      {
+        "name": "Referer",
+        "value": "https://dynamic.12306.cn/otsweb/order/confirmPassengerAction.do?method=init"
+      }
+    ],
+    "queryString": [
+      {
+        "name": "method",
+        "value": "getQueueCount"
+      },
+      {
+        "name": "train_date",
+        "value": "2013-02-08"
+      },
+      {
+        "name": "train_no",
+        "value": "6i00000G7200"
+      },
+      {
+        "name": "station",
+        "value": "G72"
+      },
+      {
+        "name": "seat",
+        "value": "M"
+      },
+      {
+        "name": "from",
+        "value": "IOQ"
+      },
+      {
+        "name": "to",
+        "value": "BXP"
+      },
+      {
+        "name": "ticket",
+        "value": "O093650001M1479500039292350001"
+      }
+    ],
+    "cookies": [
+      {
+        "name": "JSESSIONID",
+        "value": "1C1215C6E7D116282CBFC25CE50325B4",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      },
+      {
+        "name": "BIGipServerotsweb",
+        "value": "2379481354.62495.0000",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      }
+    ],
+    "headersSize": 785,
+    "bodySize": 0
+  },
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "httpVersion": "HTTP/1.1",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Sun, 03 Feb 2013 05:44:05 GMT"
+      },
+      {
+        "name": "X-Powered-By",
+        "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+      },
+      {
+        "name": "X-Cache",
+        "value": "MISS from cache.51cdn.com"
+      },
+      {
+        "name": "X-Via",
+        "value": "1.1 gdzj14:8361 (Cdn Cache Server V2.0)"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Content-Length",
+        "value": "90"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Server",
+        "value": "Apache-Coyote/1.1"
+      },
+      {
+        "name": "Content-Type",
+        "value": "text/html;charset=UTF-8"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "Wed, 31 Dec 1969 23:59:59 GMT"
+      }
+    ],
+    "cookies": [],
+    "content": {
+      "size": 90,
+      "mimeType": "text/html",
+      "compression": -64
+    },
+    "redirectURL": "",
+    "headersSize": 384,
+    "bodySize": 154
+  },
+  "cache": {},
+  "timings": {
+    "blocked": 0,
+    "dns": -1,
+    "connect": -1,
+    "send": 0,
+    "wait": 105,
+    "receive": 22,
+    "ssl": -1
+  },
+  "pageref": "page_4"
+}

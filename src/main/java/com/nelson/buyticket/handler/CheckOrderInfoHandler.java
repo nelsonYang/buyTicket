@@ -1,8 +1,11 @@
 package com.nelson.buyticket.handler;
 
+import com.nelson.buyticket.entity.RequestEntity;
 import com.nelson.buyticket.httpclient.HttpPostRequestor;
 import com.nelson.buyticket.httpclient.SSLHttpClient;
+import com.nelson.buyticket.requestenum.RequestEnum;
 import com.nelson.buyticket.threaLocal.ParameterThreadLocal;
+import com.nelson.configuration.ConfigurationReader;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.http.message.BasicNameValuePair;
@@ -47,7 +50,8 @@ public class CheckOrderInfoHandler implements Handler {
         parameterList.add(paramParam);
         paramParam = new BasicNameValuePair("org.apache.struts.taglib.html.TOKEN", threadLocal.get("token"));
         parameterList.add(paramParam);
-        httpPostRequestor = new HttpPostRequestor(SSLHttpClient.getSSLHttpClient(), "https://dynamic.12306.cn/otsweb/order/confirmPassengerAction.do?method=checkOrderInfo&rand=" + secondRandCode, "/order.json", "/orderPara.json");
+        RequestEntity requestEntity = ConfigurationReader.getRequestMap().get(RequestEnum.CheckOrderInfoNew);
+        httpPostRequestor = new HttpPostRequestor(SSLHttpClient.getSSLHttpClient(),requestEntity);
         httpPostRequestor.getNameValuePairs().addAll(parameterList);
         String content = httpPostRequestor.request();
         return content;

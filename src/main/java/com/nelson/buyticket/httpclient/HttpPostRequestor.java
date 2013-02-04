@@ -1,5 +1,6 @@
 package com.nelson.buyticket.httpclient;
 
+import com.nelson.buyticket.entity.RequestEntity;
 import com.nelson.buyticket.json.JsonParser;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -27,24 +28,27 @@ public class HttpPostRequestor implements Requestor {
     private String jsonUrlName;
     private List<BasicNameValuePair> nameValuePairs;
     private String jsonParamName;
+    private RequestEntity requestEntity;
+
+    public HttpPostRequestor(DefaultHttpClient httpClient, RequestEntity requestEntity) {
+        this.httpClient = httpClient;
+        this.requestEntity = requestEntity;
+    }
 
     public HttpPostRequestor(DefaultHttpClient httpClient, String url, String jsonHeaderName, String jsonParamName) {
         this.httpClient = httpClient;
-        this.url = url;
-        this.jsonHeaderName = jsonHeaderName;
-        this.jsonParamName = jsonParamName;
-        if (this.jsonParamName != null && !jsonParamName.isEmpty()) {
-            if (nameValuePairs == null) {
-                nameValuePairs = new ArrayList<BasicNameValuePair>(36);
-            }
-            Map<String, String> paraMap = JsonParser.parseJson(this.jsonParamName, "params");
-            BasicNameValuePair paramParam;
-            for (Map.Entry<String, String> entry : paraMap.entrySet()) {
-                System.out.println("param:" + entry.getKey() + ":" + entry.getValue());
-                paramParam = new BasicNameValuePair(entry.getKey(), entry.getValue());
-                nameValuePairs.add(paramParam);
-            }
+
+        if (nameValuePairs == null) {
+            nameValuePairs = new ArrayList<BasicNameValuePair>(36);
         }
+        Map<String, String> paraMap = requestEntity.getParameters();
+        BasicNameValuePair paramParam;
+        for (Map.Entry<String, String> entry : paraMap.entrySet()) {
+            System.out.println("param:" + entry.getKey() + ":" + entry.getValue());
+            paramParam = new BasicNameValuePair(entry.getKey(), entry.getValue());
+            nameValuePairs.add(paramParam);
+        }
+
     }
 
     public HttpPostRequestor(DefaultHttpClient httpClient, String jsonUrlName, String jsonHeaderName, List<BasicNameValuePair> nameValuePairs) {
@@ -57,8 +61,8 @@ public class HttpPostRequestor implements Requestor {
     @Override
     public String request() {
         String result = "";
-        HttpPost httpost = new HttpPost(this.url);
-        Map<String, String> headerMap = JsonParser.parseJson(this.jsonHeaderName, "header");
+        HttpPost httpost = new HttpPost(requestEntity.getUrl());
+        Map<String, String> headerMap = requestEntity.getHeaders();
         for (Map.Entry<String, String> entry : headerMap.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue());
             httpost.setHeader(entry.getKey(), entry.getValue());

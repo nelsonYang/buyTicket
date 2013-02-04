@@ -1,8 +1,11 @@
 package com.nelson.buyticket.handler;
 
+import com.nelson.buyticket.entity.RequestEntity;
 import com.nelson.buyticket.httpclient.HttpPostRequestor;
 import com.nelson.buyticket.httpclient.SSLHttpClient;
+import com.nelson.buyticket.requestenum.RequestEnum;
 import com.nelson.buyticket.threaLocal.ParameterThreadLocal;
+import com.nelson.configuration.ConfigurationReader;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.http.message.BasicNameValuePair;
@@ -44,7 +47,9 @@ public class LoginHandler implements Handler {
         parameterList.add(passwordErrorFocusParam);
         parameterList.add(randCodeParam);
         parameterList.add(randErrorFocusParam);
-        httpPostRequestor = new HttpPostRequestor(SSLHttpClient.getSSLHttpClient(), "https://dynamic.12306.cn/otsweb/loginAction.do?method=login", "/login.json", parameterList);
+        //todo
+        RequestEntity requestEntity = ConfigurationReader.getRequestMap().get(RequestEnum.LoginActionNew);
+        httpPostRequestor = new HttpPostRequestor(SSLHttpClient.getSSLHttpClient(),requestEntity);
         String content = httpPostRequestor.request();
         return content;
     }

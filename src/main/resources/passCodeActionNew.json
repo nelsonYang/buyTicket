@@ -1,0 +1,142 @@
+{
+  "startedDateTime": "2013-02-03T05:48:02.803Z",
+  "time": 114,
+  "request": {
+    "method": "GET",
+    "url": "https://dynamic.12306.cn/otsweb/passCodeAction.do?rand=randp",
+    "httpVersion": "HTTP/1.1",
+    "headers": [
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip,deflate,sdch"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.8"
+      },
+      {
+        "name": "Cookie",
+        "value": "JSESSIONID=1C1215C6E7D116282CBFC25CE50325B4; BIGipServerotsweb=2379481354.62495.0000"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Accept-Charset",
+        "value": "GBK,utf-8;q=0.7,*;q=0.3"
+      },
+      {
+        "name": "Host",
+        "value": "dynamic.12306.cn"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11"
+      },
+      {
+        "name": "Accept",
+        "value": "*/*"
+      },
+      {
+        "name": "Referer",
+        "value": "https://dynamic.12306.cn/otsweb/order/confirmPassengerAction.do?method=init"
+      }
+    ],
+    "queryString": [
+      {
+        "name": "rand",
+        "value": "randp"
+      }
+    ],
+    "cookies": [
+      {
+        "name": "JSESSIONID",
+        "value": "1C1215C6E7D116282CBFC25CE50325B4",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      },
+      {
+        "name": "BIGipServerotsweb",
+        "value": "2379481354.62495.0000",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      }
+    ],
+    "headersSize": 526,
+    "bodySize": 0
+  },
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "httpVersion": "HTTP/1.1",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Sun, 03 Feb 2013 05:48:03 GMT"
+      },
+      {
+        "name": "X-Powered-By",
+        "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+      },
+      {
+        "name": "Transfer-Encoding",
+        "value": "chunked"
+      },
+      {
+        "name": "X-Cache",
+        "value": "MISS from cache.51cdn.com"
+      },
+      {
+        "name": "X-Via",
+        "value": "1.1 gdzj14:8361 (Cdn Cache Server V2.0)"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Pragma",
+        "value": "No-cache"
+      },
+      {
+        "name": "Server",
+        "value": "Apache-Coyote/1.1"
+      },
+      {
+        "name": "Content-Type",
+        "value": "image/jpeg"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+      }
+    ],
+    "cookies": [],
+    "content": {
+      "size": 3260,
+      "mimeType": "image/jpeg",
+      "compression": -178
+    },
+    "redirectURL": "",
+    "headersSize": 379,
+    "bodySize": 3438
+  },
+  "cache": {},
+  "timings": {
+    "blocked": 0,
+    "dns": -1,
+    "connect": -1,
+    "send": 0,
+    "wait": 77,
+    "receive": 35,
+    "ssl": -1
+  },
+  "pageref": "page_4"
+}

@@ -1,5 +1,6 @@
 package com.nelson.buyticket.httpclient;
 
+import com.nelson.buyticket.entity.RequestEntity;
 import com.nelson.buyticket.json.JsonParser;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -25,7 +26,11 @@ public class HttpGetRequestor implements Requestor {
     private String jsonHeaderName;
     private String jsonUrlName;
     private String imageUrl = "c:/test.jpg";
-
+    private RequestEntity requestEntity;
+    public HttpGetRequestor(DefaultHttpClient httpClient, RequestEntity requestEntity){
+        this.httpClient = httpClient;
+        this.requestEntity = requestEntity;
+    }
     public HttpGetRequestor(DefaultHttpClient httpClient, String url, String jsonHeaderName) {
         this.httpClient = httpClient;
         this.url = url;
@@ -49,8 +54,8 @@ public class HttpGetRequestor implements Requestor {
     @Override
     public String request() {
         String result = "";
-        HttpGet httpGet = new HttpGet(this.url);
-        Map<String, String> headerMap = JsonParser.parseJson(this.jsonHeaderName, "header");
+        HttpGet httpGet = new HttpGet(requestEntity.getUrl());
+        Map<String, String> headerMap = requestEntity.getHeaders();
         for (Map.Entry<String, String> entry : headerMap.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue());
             httpGet.setHeader(entry.getKey(), entry.getValue());

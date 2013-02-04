@@ -1,0 +1,320 @@
+{
+  "startedDateTime": "2013-02-03T05:44:04.719Z",
+  "time": 229,
+  "request": {
+    "method": "POST",
+    "url": "https://dynamic.12306.cn/otsweb/order/confirmPassengerAction.do?method=checkOrderInfo&rand=8E6d",
+    "httpVersion": "HTTP/1.1",
+    "headers": [
+      {
+        "name": "Cookie",
+        "value": "JSESSIONID=1C1215C6E7D116282CBFC25CE50325B4; BIGipServerotsweb=2379481354.62495.0000"
+      },
+      {
+        "name": "Origin",
+        "value": "https://dynamic.12306.cn"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip,deflate,sdch"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.8"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Content-Length",
+        "value": "1228"
+      },
+      {
+        "name": "Accept-Charset",
+        "value": "GBK,utf-8;q=0.7,*;q=0.3"
+      },
+      {
+        "name": "Host",
+        "value": "dynamic.12306.cn"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/x-www-form-urlencoded"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*"
+      },
+      {
+        "name": "Referer",
+        "value": "https://dynamic.12306.cn/otsweb/order/confirmPassengerAction.do?method=init"
+      }
+    ],
+    "queryString": [
+      {
+        "name": "method",
+        "value": "checkOrderInfo"
+      },
+      {
+        "name": "rand",
+        "value": "8E6d"
+      }
+    ],
+    "cookies": [
+      {
+        "name": "JSESSIONID",
+        "value": "1C1215C6E7D116282CBFC25CE50325B4",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      },
+      {
+        "name": "BIGipServerotsweb",
+        "value": "2379481354.62495.0000",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      }
+    ],
+    "headersSize": 736,
+    "bodySize": 1228,
+    "postData": {
+      "mimeType": "application/x-www-form-urlencoded",
+      "text": "org.apache.struts.taglib.html.TOKEN=d923c75e5ea7c76b3c3f2eebb0312b10&leftTicketStr=O093650001M1479500039292350001&textfield=%E4%B8%AD%E6%96%87%E6%88%96%E6%8B%BC%E9%9F%B3%E9%A6%96%E5%AD%97%E6%AF%8D&checkbox0=0&orderRequest.train_date=2013-02-08&orderRequest.train_no=6i00000G7200&orderRequest.station_train_code=G72&orderRequest.from_station_telecode=IOQ&orderRequest.to_station_telecode=BXP&orderRequest.seat_type_code=&orderRequest.ticket_type_order_num=&orderRequest.bed_level_order_num=000000000000000000000000000000&orderRequest.start_time=07%3A56&orderRequest.end_time=18%3A21&orderRequest.from_station_name=%E6%B7%B1%E5%9C%B3%E5%8C%97&orderRequest.to_station_name=%E5%8C%97%E4%BA%AC%E8%A5%BF&orderRequest.cancel_flag=1&orderRequest.id_mode=Y&passengerTickets=M%2C0%2C1%2C%E6%9D%A8%E9%87%91%E7%81%AB%2CB%2C654321%2C13728656169%2CY&oldPassengers=%E6%9D%A8%E9%87%91%E7%81%AB%2CB%2C654321&passenger_1_seat=M&passenger_1_ticket=1&passenger_1_name=%E6%9D%A8%E9%87%91%E7%81%AB&passenger_1_cardtype=B&passenger_1_cardno=654321&passenger_1_mobileno=13728656169&checkbox9=Y&oldPassengers=&checkbox9=Y&oldPassengers=&checkbox9=Y&oldPassengers=&checkbox9=Y&oldPassengers=&checkbox9=Y&randCode=8E6d&orderRequest.reserve_flag=A&tFlag=dc",
+      "params": [
+        {
+          "name": "org.apache.struts.taglib.html.TOKEN",
+          "value": "d923c75e5ea7c76b3c3f2eebb0312b10"
+        },
+        {
+          "name": "leftTicketStr",
+          "value": "O093650001M1479500039292350001"
+        },
+        {
+          "name": "textfield",
+          "value": "%E4%B8%AD%E6%96%87%E6%88%96%E6%8B%BC%E9%9F%B3%E9%A6%96%E5%AD%97%E6%AF%8D"
+        },
+        {
+          "name": "checkbox0",
+          "value": "0"
+        },
+        {
+          "name": "orderRequest.train_date",
+          "value": "2013-02-08"
+        },
+        {
+          "name": "orderRequest.train_no",
+          "value": "6i00000G7200"
+        },
+        {
+          "name": "orderRequest.station_train_code",
+          "value": "G72"
+        },
+        {
+          "name": "orderRequest.from_station_telecode",
+          "value": "IOQ"
+        },
+        {
+          "name": "orderRequest.to_station_telecode",
+          "value": "BXP"
+        },
+        {
+          "name": "orderRequest.seat_type_code",
+          "value": ""
+        },
+        {
+          "name": "orderRequest.ticket_type_order_num",
+          "value": ""
+        },
+        {
+          "name": "orderRequest.bed_level_order_num",
+          "value": "000000000000000000000000000000"
+        },
+        {
+          "name": "orderRequest.start_time",
+          "value": "07%3A56"
+        },
+        {
+          "name": "orderRequest.end_time",
+          "value": "18%3A21"
+        },
+        {
+          "name": "orderRequest.from_station_name",
+          "value": "%E6%B7%B1%E5%9C%B3%E5%8C%97"
+        },
+        {
+          "name": "orderRequest.to_station_name",
+          "value": "%E5%8C%97%E4%BA%AC%E8%A5%BF"
+        },
+        {
+          "name": "orderRequest.cancel_flag",
+          "value": "1"
+        },
+        {
+          "name": "orderRequest.id_mode",
+          "value": "Y"
+        },
+        {
+          "name": "passengerTickets",
+          "value": "M%2C0%2C1%2C%E6%9D%A8%E9%87%91%E7%81%AB%2CB%2C654321%2C13728656169%2CY"
+        },
+        {
+          "name": "oldPassengers",
+          "value": "%E6%9D%A8%E9%87%91%E7%81%AB%2CB%2C654321"
+        },
+        {
+          "name": "passenger_1_seat",
+          "value": "M"
+        },
+        {
+          "name": "passenger_1_ticket",
+          "value": "1"
+        },
+        {
+          "name": "passenger_1_name",
+          "value": "%E6%9D%A8%E9%87%91%E7%81%AB"
+        },
+        {
+          "name": "passenger_1_cardtype",
+          "value": "B"
+        },
+        {
+          "name": "passenger_1_cardno",
+          "value": "654321"
+        },
+        {
+          "name": "passenger_1_mobileno",
+          "value": "13728656169"
+        },
+        {
+          "name": "checkbox9",
+          "value": "Y"
+        },
+        {
+          "name": "oldPassengers",
+          "value": ""
+        },
+        {
+          "name": "checkbox9",
+          "value": "Y"
+        },
+        {
+          "name": "oldPassengers",
+          "value": ""
+        },
+        {
+          "name": "checkbox9",
+          "value": "Y"
+        },
+        {
+          "name": "oldPassengers",
+          "value": ""
+        },
+        {
+          "name": "checkbox9",
+          "value": "Y"
+        },
+        {
+          "name": "oldPassengers",
+          "value": ""
+        },
+        {
+          "name": "checkbox9",
+          "value": "Y"
+        },
+        {
+          "name": "randCode",
+          "value": "8E6d"
+        },
+        {
+          "name": "orderRequest.reserve_flag",
+          "value": "A"
+        },
+        {
+          "name": "tFlag",
+          "value": "dc"
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "httpVersion": "HTTP/1.1",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Sun, 03 Feb 2013 05:44:05 GMT"
+      },
+      {
+        "name": "X-Powered-By",
+        "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+      },
+      {
+        "name": "X-Cache",
+        "value": "MISS from cache.51cdn.com"
+      },
+      {
+        "name": "X-Via",
+        "value": "1.1 gdzj14:8361 (Cdn Cache Server V2.0)"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Content-Length",
+        "value": "55"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Server",
+        "value": "Apache-Coyote/1.1"
+      },
+      {
+        "name": "Content-Type",
+        "value": "text/html;charset=UTF-8"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "Wed, 31 Dec 1969 23:59:59 GMT"
+      }
+    ],
+    "cookies": [],
+    "content": {
+      "size": 55,
+      "mimeType": "text/html",
+      "compression": -67
+    },
+    "redirectURL": "",
+    "headersSize": 384,
+    "bodySize": 122
+  },
+  "cache": {},
+  "timings": {
+    "blocked": 0,
+    "dns": -1,
+    "connect": -1,
+    "send": 1,
+    "wait": 227,
+    "receive": 1,
+    "ssl": -1
+  },
+  "pageref": "page_4"
+}
